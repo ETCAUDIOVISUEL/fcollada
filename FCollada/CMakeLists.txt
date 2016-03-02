@@ -23,3 +23,8 @@ add_subdirectory(LibXML)
 
 add_library(Fcollada ${FCollada_SRC} ${FDocument_SRC} ${FMath_SRC} ${FUtils_SRC})
 target_link_libraries(Fcollada ColladaXML)
+
+set(FCOLLADA_INSTALL_PATH ${CMAKE_INSTALL_PREFIX}/Fcollada)
+
+set_target_properties(ColladaXML PROPERTIES RUNTIME_OUTPUT_NAME ColladaXML)
+install(TARGETS Fcollada DESTINATION lib)
