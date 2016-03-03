@@ -1,181 +1,180 @@
-set(FDocument_SRC
+set(FCDocument_SRC
 	FCDAnimated.cpp
-	FCDAnimated.h
 	FCDAnimation.cpp
-	FCDAnimation.h
 	FCDAnimationChannel.cpp
-	FCDAnimationChannel.h
 	FCDAnimationClip.cpp
-	FCDAnimationClip.h
 	FCDAnimationClipTools.cpp
-	FCDAnimationClipTools.h
 	FCDAnimationCurve.cpp
-	FCDAnimationCurve.h
 	FCDAnimationCurveTools.cpp
-	FCDAnimationCurveTools.h
 	FCDAnimationKey.cpp
-	FCDAnimationKey.h
 	FCDAnimationMultiCurve.cpp
-	FCDAnimationMultiCurve.h
 	FCDAsset.cpp
-	FCDAsset.h
 	FCDCamera.cpp
-	FCDCamera.h
 	FCDController.cpp
-	FCDController.h
 	FCDControllerInstance.cpp
-	FCDControllerInstance.h
 	FCDControllerTools.cpp
-	FCDControllerTools.h
 	FCDEffect.cpp
-	FCDEffect.h
 	FCDEffectCode.cpp
-	FCDEffectCode.h
 	FCDEffectParameter.cpp
-	FCDEffectParameter.h
-	FCDEffectParameter.hpp
 	FCDEffectParameterFactory.cpp
-	FCDEffectParameterFactory.h
 	FCDEffectParameterSampler.cpp
-	FCDEffectParameterSampler.h
 	FCDEffectParameterSurface.cpp
-	FCDEffectParameterSurface.h
 	FCDEffectPass.cpp
-	FCDEffectPass.h
 	FCDEffectPassShader.cpp
-	FCDEffectPassShader.h
 	FCDEffectPassState.cpp
-	FCDEffectPassState.h
 	FCDEffectProfile.cpp
-	FCDEffectProfile.h
 	FCDEffectProfileFX.cpp
-	FCDEffectProfileFX.h
 	FCDEffectStandard.cpp
-	FCDEffectStandard.h
 	FCDEffectTechnique.cpp
-	FCDEffectTechnique.h
 	FCDEffectTools.cpp
-	FCDEffectTools.h
 	FCDEmitter.cpp
-	FCDEmitter.h
 	FCDEmitterInstance.cpp
-	FCDEmitterInstance.h
 	FCDEmitterObject.cpp
-	FCDEmitterObject.h
 	FCDEmitterParticle.cpp
-	FCDEmitterParticle.h
 	FCDEntity.cpp
-	FCDEntity.h
 	FCDEntityInstance.cpp
-	FCDEntityInstance.h
 	FCDEntityReference.cpp
-	FCDEntityReference.h
 	FCDExternalReferenceManager.cpp
-	FCDExternalReferenceManager.h
 	FCDExtra.cpp
-	FCDExtra.h
 	FCDForceDeflector.cpp
-	FCDForceDeflector.h
 	FCDForceDrag.cpp
-	FCDForceDrag.h
 	FCDForceField.cpp
-	FCDForceField.h
 	FCDForceGravity.cpp
-	FCDForceGravity.h
 	FCDForcePBomb.cpp
+	FCDForceWind.cpp
+	FCDGeometry.cpp
+	FCDGeometryInstance.cpp
+	FCDGeometryMesh.cpp
+	FCDGeometryNURBSSurface.cpp
+	FCDGeometryPolygons.cpp
+	FCDGeometryPolygonsInput.cpp
+	FCDGeometryPolygonsTools.cpp
+	FCDGeometrySource.cpp
+	FCDGeometrySpline.cpp
+	FCDImage.cpp
+	FCDLibrary.cpp
+	FCDLight.cpp
+	FCDLightTools.cpp
+	FCDMaterial.cpp
+	FCDMaterialInstance.cpp
+	FCDMorphController.cpp
+	FCDObject.cpp
+	FCDObjectWithId.cpp
+	FCDocument.cpp
+	FCDocumentTools.cpp
+	FCDParameterAnimatable.cpp
+	FCDParticleModifier.cpp
+	FCDPhysicsAnalyticalGeometry.cpp
+	FCDPhysicsForceFieldInstance.cpp
+	FCDPhysicsMaterial.cpp
+	FCDPhysicsModel.cpp
+	FCDPhysicsModelInstance.cpp
+	FCDPhysicsRigidBody.cpp
+	FCDPhysicsRigidBodyInstance.cpp
+	FCDPhysicsRigidBodyParameters.cpp
+	FCDPhysicsRigidConstraint.cpp
+	FCDPhysicsRigidConstraintInstance.cpp
+	FCDPhysicsScene.cpp
+	FCDPhysicsShape.cpp
+	FCDPlaceHolder.cpp
+	FCDSceneNode.cpp
+	FCDSceneNodeIterator.cpp
+	FCDSceneNodeTools.cpp
+	FCDSkinController.cpp
+	FCDTargetedEntity.cpp
+	FCDTexture.cpp
+	FCDTransform.cpp
+	FCDVersion.cpp
+)
+
+set(FCDocument_H
+	FCDAnimated.h
+	FCDAnimation.h
+	FCDAnimationChannel.h
+	FCDAnimationClip.h
+	FCDAnimationClipTools.h
+	FCDAnimationCurve.h
+	FCDAnimationCurveTools.h
+	FCDAnimationKey.h
+	FCDAnimationMultiCurve.h
+	FCDAsset.h
+	FCDCamera.h
+	FCDController.h
+	FCDControllerInstance.h
+	FCDControllerTools.h
+	FCDEffect.h
+	FCDEffectCode.h
+	FCDEffectParameter.h
+	FCDEffectParameterFactory.h
+	FCDEffectParameterSampler.h
+	FCDEffectParameterSurface.h
+	FCDEffectPass.h
+	FCDEffectPassShader.h
+	FCDEffectPassState.h
+	FCDEffectProfile.h
+	FCDEffectProfileFX.h
+	FCDEffectStandard.h
+	FCDEffectTechnique.h
+	FCDEffectTools.h
+	FCDEmitter.h
+	FCDEmitterInstance.h
+	FCDEmitterObject.h
+	FCDEmitterParticle.h
+	FCDEntity.h
+	FCDEntityInstance.h
+	FCDEntityReference.h
+	FCDExternalReferenceManager.h
+	FCDExtra.h
+	FCDForceDeflector.h
+	FCDForceDrag.h
+	FCDForceField.h
+	FCDForceGravity.h
 	FCDForcePBomb.h
 	FCDForceTyped.h
-	FCDForceWind.cpp
 	FCDForceWind.h
-	FCDGeometry.cpp
 	FCDGeometry.h
-	FCDGeometryInstance.cpp
 	FCDGeometryInstance.h
-	FCDGeometryMesh.cpp
 	FCDGeometryMesh.h
-	FCDGeometryNURBSSurface.cpp
 	FCDGeometryNURBSSurface.h
-	FCDGeometryPolygons.cpp
 	FCDGeometryPolygons.h
-	FCDGeometryPolygonsInput.cpp
 	FCDGeometryPolygonsInput.h
-	FCDGeometryPolygonsTools.cpp
 	FCDGeometryPolygonsTools.h
-	FCDGeometrySource.cpp
 	FCDGeometrySource.h
-	FCDGeometrySpline.cpp
 	FCDGeometrySpline.h
-	FCDImage.cpp
 	FCDImage.h
-	FCDLibrary.cpp
 	FCDLibrary.h
-	FCDLibrary.hpp
-	FCDLight.cpp
 	FCDLight.h
-	FCDLightTools.cpp
 	FCDLightTools.h
-	FCDMaterial.cpp
 	FCDMaterial.h
-	FCDMaterialInstance.cpp
 	FCDMaterialInstance.h
-	FCDMorphController.cpp
 	FCDMorphController.h
-	FCDObject.cpp
 	FCDObject.h
-	FCDObjectWithId.cpp
 	FCDObjectWithId.h
-	FCDocument.cpp
 	FCDocument.h
-	FCDocumentTools.cpp
 	FCDocumentTools.h
-	FCDParameterAnimatable.cpp
 	FCDParameterAnimatable.h
-	FCDParameterAnimatable.hpp
 	FCDParticleEmitter.h
-	FCDParticleModifier.cpp
 	FCDParticleModifier.h
-	FCDPhysicsAnalyticalGeometry.cpp
 	FCDPhysicsAnalyticalGeometry.h
-	FCDPhysicsForceFieldInstance.cpp
 	FCDPhysicsForceFieldInstance.h
-	FCDPhysicsMaterial.cpp
 	FCDPhysicsMaterial.h
-	FCDPhysicsModel.cpp
 	FCDPhysicsModel.h
-	FCDPhysicsModelInstance.cpp
 	FCDPhysicsModelInstance.h
-	FCDPhysicsRigidBody.cpp
 	FCDPhysicsRigidBody.h
-	FCDPhysicsRigidBodyInstance.cpp
 	FCDPhysicsRigidBodyInstance.h
-	FCDPhysicsRigidBodyParameters.cpp
 	FCDPhysicsRigidBodyParameters.h
-	FCDPhysicsRigidConstraint.cpp
 	FCDPhysicsRigidConstraint.h
-	FCDPhysicsRigidConstraintInstance.cpp
 	FCDPhysicsRigidConstraintInstance.h
-	FCDPhysicsScene.cpp
 	FCDPhysicsScene.h
-	FCDPhysicsShape.cpp
 	FCDPhysicsShape.h
-	FCDPlaceHolder.cpp
 	FCDPlaceHolder.h
-	FCDSceneNode.cpp
 	FCDSceneNode.h
-	FCDSceneNodeIterator.cpp
 	FCDSceneNodeIterator.h
-	FCDSceneNodeIterator.hpp
-	FCDSceneNodeTools.cpp
 	FCDSceneNodeTools.h
-	FCDSkinController.cpp
 	FCDSkinController.h
-	FCDTargetedEntity.cpp
 	FCDTargetedEntity.h
-	FCDTexture.cpp
 	FCDTexture.h
-	FCDTransform.cpp
 	FCDTransform.h
-	FCDVersion.cpp
 	FCDVersion.h
 )
 

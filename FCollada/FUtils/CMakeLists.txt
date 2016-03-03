@@ -1,89 +1,89 @@
 set(FUtils_SRC
 	FUAssert.cpp
-	FUAssert.h
 	FUBase64.cpp
-	FUBase64.h
 	FUBoundingBox.cpp
-	FUBoundingBox.h
 	FUBoundingSphere.cpp
-	FUBoundingSphere.h
 	FUBoundingTest.cpp
 	FUCrc32.cpp
-	FUCrc32.h
 	FUCrc32Test.cpp
 	FUCriticalSection.cpp
-	FUCriticalSection.h
 	FUDaeEnum.cpp
-	FUDaeEnum.h
-	FUDaeEnumSyntax.h
-	FUDaeSyntax.h
 	FUDateTime.cpp
-	FUDateTime.h
 	FUDebug.cpp
-	FUDebug.h
 	FUError.cpp
-	FUError.h
 	FUErrorLog.cpp
-	FUErrorLog.h
-	FUEvent.h
 	FUEventTest.cpp
 	FUFile.cpp
-	FUFile.h
 	FUFileManager.cpp
-	FUFileManager.h
 	FUFileManagerTest.cpp
-	FUFunctor.h
 	FUFunctorTest.cpp
 	FULogFile.cpp
-	FULogFile.h
 	FUObject.cpp
-	FUObject.h
 	FUObjectTest.cpp
 	FUObjectType.cpp
-	FUObjectType.h
 	FUParameter.cpp
-	FUParameter.h
-	FUParameter.hpp
 	FUParameterizable.cpp
-	FUParameterizable.h
-	FUPlugin.h
 	FUPluginManager.cpp
-	FUPluginManager.h
 	FUSemaphore.cpp
-	FUSemaphore.h
-	FUSingleton.h
-	FUString.h
 	FUStringBuilder.cpp
-	FUStringBuilder.h
-	FUStringBuilder.hpp
 	FUStringBuilderTest.cpp
 	FUStringConversion.cpp
-	FUStringConversion.h
-	FUStringConversion.hpp
 	FUStringConversionTest.cpp
 	FUStringTest.cpp
 	FUSynchronizableObject.cpp
-	FUSynchronizableObject.h
 	FUTestBed.cpp
-	FUTestBed.h
 	FUThread.cpp
-	FUThread.h
-	FUtils.h
 	FUTracker.cpp
-	FUTracker.h
 	FUUniqueStringMap.cpp
-	FUUniqueStringMap.h
 	FUUniqueStringMapTest.cpp
 	FUUri.cpp
-	FUUri.h
 	FUXmlDocument.cpp
-	FUXmlDocument.h
 	FUXmlParser.cpp
-	FUXmlParser.h
 	FUXmlWriter.cpp
+	StdAfx.cpp
+)
+
+set(FUtils_H
+	FUAssert.h
+	FUBase64.h
+	FUBoundingBox.h
+	FUBoundingSphere.h
+	FUCrc32.h
+	FUCriticalSection.h
+	FUDaeEnum.h
+	FUDaeEnumSyntax.h
+	FUDaeSyntax.h
+	FUDateTime.h
+	FUDebug.h
+	FUError.h
+	FUErrorLog.h
+	FUEvent.h
+	FUFile.h
+	FUFileManager.h
+	FUFunctor.h
+	FULogFile.h
+	FUObject.h
+	FUObjectType.h
+	FUParameter.h
+	FUParameterizable.h
+	FUPlugin.h
+	FUPluginManager.h
+	FUSemaphore.h
+	FUSingleton.h
+	FUString.h
+	FUStringBuilder.h
+	FUStringConversion.h
+	FUSynchronizableObject.h
+	FUTestBed.h
+	FUThread.h
+	FUtils.h
+	FUTracker.h
+	FUUniqueStringMap.h
+	FUUri.h
+	FUXmlDocument.h
+	FUXmlParser.h
 	FUXmlWriter.h
 	Platforms.h
-	StdAfx.cpp
 	StdAfx.h
 )
 

@@ -1,42 +1,44 @@
 set(FMath_SRC
-	CMakeLists.txt
 	FMAllocator.cpp
-	FMAllocator.h
 	FMAngleAxis.cpp
+	FMArrayTest.cpp
+	FMColor.cpp
+	FMInterpolation.cpp
+	FMLookAt.cpp
+	FMMatrix33.cpp
+	FMMatrix44.cpp
+	FMQuaternion.cpp
+	FMQuaternionTest.cpp
+	FMRandom.cpp
+	FMSkew.cpp
+	FMTreeTest.cpp
+	FMVector3.cpp
+	FMVolume.cpp
+	StdAfx.cpp
+)
+
+set(FMath_H
+	FMAllocator.h
 	FMAngleAxis.h
 	FMArray.h
 	FMArrayPointer.h
-	FMArrayTest.cpp
 	FMath.h
-	FMColor.cpp
 	FMColor.h
 	FMFloat.h
 	FMInteger.h
-	FMInterpolation.cpp
 	FMInterpolation.h
-	FMLookAt.cpp
 	FMLookAt.h
-	FMMatrix33.cpp
 	FMMatrix33.h
-	FMMatrix44.cpp
 	FMMatrix44.h
-	FMQuaternion.cpp
 	FMQuaternion.h
-	FMQuaternionTest.cpp
-	FMRandom.cpp
 	FMRandom.h
-	FMSkew.cpp
 	FMSkew.h
 	FMSort.h
 	FMTree.h
-	FMTreeTest.cpp
 	FMVector2.h
-	FMVector3.cpp
 	FMVector3.h
 	FMVector4.h
-	FMVolume.cpp
 	FMVolume.h
-	StdAfx.cpp
 	StdAfx.h
 )
 
