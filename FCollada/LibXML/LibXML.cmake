@@ -1,0 +1,101 @@
+set(ColladaXML_SRC
+    LibXML/acconfig.h
+	LibXML/c14n.c
+	LibXML/catalog.c
+	LibXML/chvalid.c
+	LibXML/config.h
+	LibXML/config-ps3.h
+	LibXML/debugXML.c
+	LibXML/dict.c
+	LibXML/DOCBparser.c
+	LibXML/elfgcchack.h
+	LibXML/encoding.c
+	LibXML/entities.c
+	LibXML/error.c
+	LibXML/globals.c
+	LibXML/hash.c
+	LibXML/HTMLparser.c
+	LibXML/HTMLtree.c
+	LibXML/legacy.c
+	LibXML/libxml.h
+	LibXML/list.c
+	LibXML/nanoftp.c
+	LibXML/nanohttp.c
+	LibXML/parser.c
+	LibXML/parserInternals.c
+	LibXML/pattern.c
+	LibXML/relaxng.c
+	LibXML/SAX.c
+	LibXML/SAX2.c
+	LibXML/threads.c
+	LibXML/tree.c
+	LibXML/uri.c
+	LibXML/valid.c
+	LibXML/xinclude.c
+	LibXML/xlink.c
+	LibXML/xmlcatalog.c
+	LibXML/xmlIO.c
+	LibXML/xmlmemory.c
+	LibXML/xmlmodule.c
+	LibXML/xmlreader.c
+	LibXML/xmlregexp.c
+	LibXML/xmlsave.c
+	LibXML/xmlstring.c
+	LibXML/xmlunicode.c
+	LibXML/xmlwriter.c
+)
+
+set(CollaXML_BASE_H
+    LibXML/include/win32config.h
+	LibXML/include/wsockcompat.h
+)
+
+set(ColladaXML_LIB_H
+    LibXML/include/libxml/c14n.h
+	LibXML/include/libxml/catalog.h
+	LibXML/include/libxml/chvalid.h
+	LibXML/include/libxml/debugXML.h
+	LibXML/include/libxml/dict.h
+	LibXML/include/libxml/DOCBparser.h
+	LibXML/include/libxml/encoding.h
+	LibXML/include/libxml/entities.h
+	LibXML/include/libxml/globals.h
+	LibXML/include/libxml/hash.h
+	LibXML/include/libxml/HTMLparser.h
+	LibXML/include/libxml/HTMLtree.h
+	LibXML/include/libxml/list.h
+	LibXML/include/libxml/nanoftp.h
+	LibXML/include/libxml/nanohttp.h
+	LibXML/include/libxml/parser.h
+	LibXML/include/libxml/parserInternals.h
+	LibXML/include/libxml/pattern.h
+	LibXML/include/libxml/relaxng.h
+	LibXML/include/libxml/SAX.h
+	LibXML/include/libxml/SAX2.h
+	LibXML/include/libxml/schemasInternals.h
+	LibXML/include/libxml/threads.h
+	LibXML/include/libxml/tree.h
+	LibXML/include/libxml/uri.h
+	LibXML/include/libxml/valid.h
+	LibXML/include/libxml/xinclude.h
+	LibXML/include/libxml/xlink.h
+	LibXML/include/libxml/xmlautomata.h
+	LibXML/include/libxml/xmlerror.h
+	LibXML/include/libxml/xmlexports.h
+	LibXML/include/libxml/xmlIO.h
+	LibXML/include/libxml/xmlmemory.h
+	LibXML/include/libxml/xmlmodule.h
+	LibXML/include/libxml/xmlreader.h
+	LibXML/include/libxml/xmlregexp.h
+	LibXML/include/libxml/xmlsave.h
+	LibXML/include/libxml/xmlschemas.h
+	LibXML/include/libxml/xmlschemastypes.h
+	LibXML/include/libxml/xmlstring.h
+	LibXML/include/libxml/xmlunicode.h
+	LibXML/include/libxml/xmlversion.h
+	LibXML/include/libxml/xmlwriter.h
+	LibXML/include/libxml/xpath.h
+	LibXML/include/libxml/xpathInternals.h
+	LibXML/include/libxml/xpointer.h
+)
+set(ColladaXML_H ${ColladaXML_BASE_H} ${ColladaXML_LIB_H})

@@ -1,0 +1,43 @@
+set(FMath_SRC
+    FMath/FMAllocator.cpp
+	FMath/FMAngleAxis.cpp
+	FMath/FMArrayTest.cpp
+	FMath/FMColor.cpp
+	FMath/FMInterpolation.cpp
+	FMath/FMLookAt.cpp
+	FMath/FMMatrix33.cpp
+	FMath/FMMatrix44.cpp
+	FMath/FMQuaternion.cpp
+	FMath/FMQuaternionTest.cpp
+	FMath/FMRandom.cpp
+	FMath/FMSkew.cpp
+	FMath/FMTreeTest.cpp
+	FMath/FMVector3.cpp
+	FMath/FMVolume.cpp
+	FMath/StdAfx.cpp
+)
+
+set(FMath/FMath_H
+    FMath/FMath/FMAllocator.h
+	FMath/FMath/FMAngleAxis.h
+	FMath/FMath/FMArray.h
+	FMath/FMArrayPointer.h
+	FMath/FMath.h
+	FMath/FMColor.h
+	FMath/FMFloat.h
+	FMath/FMInteger.h
+	FMath/FMInterpolation.h
+	FMath/FMLookAt.h
+	FMath/FMMatrix33.h
+	FMath/FMMatrix44.h
+	FMath/FMQuaternion.h
+	FMath/FMRandom.h
+	FMath/FMSkew.h
+	FMath/FMSort.h
+	FMath/FMTree.h
+	FMath/FMVector2.h
+	FMath/FMVector3.h
+	FMath/FMVector4.h
+	FMath/FMVolume.h
+	FMath/StdAfx.h
+)
