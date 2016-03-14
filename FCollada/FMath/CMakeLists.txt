@@ -45,3 +45,13 @@ set(FMath_H
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
                     ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+add_library(FMath ${FMath_H} ${FMath_SRC})
+
+target_include_directories(FMath PUBLIC
+	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+	$<INSTALL_INTERFACE:include>
+)
+
+install(TARGETS FMath DESTINATION lib)
+install(FILES ${FMath_H} DESTINATION include/FMath)

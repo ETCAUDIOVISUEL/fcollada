@@ -181,3 +181,15 @@ set(FCDocument_H
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
                     ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+
+add_library(FCDocument ${FCDocument_H} ${FCDocument_SRC})
+target_link_libraries(FCDocument ColladaXML)
+
+target_include_directories(FCDocument PUBLIC
+	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+	$<INSTALL_INTERFACE:include>
+)
+
+install(TARGETS FCDocument DESTINATION lib)
+install(FILES ${FCDocument_H} DESTINATION include/FCDocument)

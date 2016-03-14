@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(Fcollada)
+project(FCollada)
 
 set(FCollada_SRC 
    DLLEntry.cpp
@@ -24,13 +24,16 @@ add_subdirectory(FMath)
 add_subdirectory(FUtils)
 add_subdirectory(LibXML)
 
-add_library(Fcollada ${FCollada_SRC} ${FCollada_H} ${FCDocument_SRC} ${FCDocument_H} ${FMath_SRC} ${FMath_H} ${FUtils_SRC} ${FUtils_H})
-target_link_libraries(Fcollada ColladaXML)
+
+add_library(FCollada ${FCollada_SRC} ${FCollada_H})
+target_link_libraries(FCollada ColladaXML)
+
+target_include_directories(FCollada PUBLIC
+	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+	$<INSTALL_INTERFACE:include>
+)
 
 set(FCOLLADA_INSTALL_PATH ${CMAKE_INSTALL_PREFIX}/Fcollada)
 
-install(TARGETS Fcollada DESTINATION lib)
+install(TARGETS FCollada DESTINATION lib)
 install(FILES ${FCollada_H} DESTINATION include)
-install(DIRECTORY FCDocument DESTINATION include FILES_MATCHING PATTERN "*.h")
-install(DIRECTORY FMath DESTINATION include FILES_MATCHING PATTERN "*.h")
-install(DIRECTORY FUtils DESTINATION include FILES_MATCHING PATTERN "*.h")

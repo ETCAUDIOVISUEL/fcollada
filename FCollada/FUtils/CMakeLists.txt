@@ -87,6 +87,17 @@ set(FUtils_H
 	StdAfx.h
 )
 
+add_library(FUtils ${FUtils_SRC} ${FUtils_H})
+target_link_libraries(FUtils ColladaXML FMath)
+
+target_include_directories(FUtils PUBLIC
+	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+	$<INSTALL_INTERFACE:include>
+)
+
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}
                     ${CMAKE_CURRENT_BINARY_DIR}
 )
+
+install(TARGETS FUtils DESTINATION lib)
+install(FILES ${FUtils_H} DESTINATION include/FUtils)
