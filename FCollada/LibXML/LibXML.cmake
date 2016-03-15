@@ -1,4 +1,4 @@
-set(ColladaXML_SRC
+set(LibXML_SRC
     LibXML/acconfig.h
 	LibXML/c14n.c
 	LibXML/catalog.c
@@ -45,12 +45,12 @@ set(ColladaXML_SRC
 	LibXML/xmlwriter.c
 )
 
-set(CollaXML_BASE_H
+set(LibXML_BASE_H
     LibXML/include/win32config.h
 	LibXML/include/wsockcompat.h
 )
 
-set(ColladaXML_LIB_H
+set(LibXML_LIB_H
     LibXML/include/libxml/c14n.h
 	LibXML/include/libxml/catalog.h
 	LibXML/include/libxml/chvalid.h
@@ -98,4 +98,5 @@ set(ColladaXML_LIB_H
 	LibXML/include/libxml/xpathInternals.h
 	LibXML/include/libxml/xpointer.h
 )
-set(ColladaXML_H ${ColladaXML_BASE_H} ${ColladaXML_LIB_H})
+
+set(LibXML_H ${LibXML_BASE_H} ${LibXML_LIB_H})

@@ -87,7 +87,7 @@ set(FCDocument_SRC
 	FCDocument/FCDVersion.cpp
 )
 
-set(base_FCDocument_H
+set(FCDocument_H
     FCDocument/FCDAnimated.h
 	FCDocument/FCDAnimation.h
 	FCDocument/FCDAnimationChannel.h

@@ -30,7 +30,7 @@ add_library(FCollada ${FCollada_SRC} ${FCollada_H}
     ${FUtils_SRC} ${FUtils_H}
     ${FMath_SRC} ${FMath_H}
     ${FCDocument_SRC} ${FCDocument_H}
-    ${LibXML_SRC} ${LibXML_H})
+    ${LibXML_SRC} ${LibXML_H}
 
 target_include_directories(FCollada PUBLIC
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>

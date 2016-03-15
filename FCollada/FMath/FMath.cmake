@@ -17,10 +17,10 @@ set(FMath_SRC
 	FMath/StdAfx.cpp
 )
 
-set(FMath/FMath_H
-    FMath/FMath/FMAllocator.h
-	FMath/FMath/FMAngleAxis.h
-	FMath/FMath/FMArray.h
+set(FMath_H
+    FMath/FMAllocator.h
+	FMath/FMAngleAxis.h
+	FMath/FMArray.h
 	FMath/FMArrayPointer.h
 	FMath/FMath.h
 	FMath/FMColor.h
