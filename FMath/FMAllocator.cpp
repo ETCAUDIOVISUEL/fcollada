@@ -25,12 +25,12 @@ namespace fm
 	// always allocating/releasing memory from the same heap.
 	void* Allocate(size_t byteCount)
 	{
-		return (*af)(byteCount);
+		return malloc(byteCount);
 	}
 
 	void Release(void* buffer)
 	{
-		(*ff)(buffer);
+        free(buffer);
 	}
 };
 
