@@ -8,12 +8,31 @@
 
 #include "StdAfx.h"
 #include "FMAllocator.h"
+#include <cstdlib>
 
 namespace fm
 {
 	// default to something: static initialization!
-	AllocateFunc af = malloc;
-	FreeFunc ff = free;
+	static AllocateFunc af = ::malloc;
+	static FreeFunc ff = ::free;
+
+    class DefaultInitializationAllocate
+    {
+        public:
+            DefaultInitializationAllocate()
+            {
+                af = ::malloc;
+            }
+    };
+
+    class DefaultInitializationRelease
+    {
+        public:
+            DefaultInitializationRelease()
+            {
+                ff = ::free;
+            }
+    };
 	
 	void SetAllocationFunctions(AllocateFunc a, FreeFunc f)
 	{
@@ -25,12 +44,14 @@ namespace fm
 	// always allocating/releasing memory from the same heap.
 	void* Allocate(size_t byteCount)
 	{
-		return malloc(byteCount);
+        static DefaultInitializationAllocate trick;
+		return (*af)(byteCount);
 	}
 
 	void Release(void* buffer)
 	{
-        free(buffer);
+        static DefaultInitializationRelease trick;
+        (*ff)(buffer);
 	}
 };
 
